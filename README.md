@@ -1,2 +1,2 @@
 # Hello world
-This is a tiny link-site.
+This is a personal link-site.
