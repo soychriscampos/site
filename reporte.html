@@ -31,7 +31,7 @@
 <strong>Análisis:</strong> Christian Campos</p>
 <h2 id="objetivo-1-identificar-pacientes-con-osteosarcopenia">Objetivo 1: Identificar pacientes con osteosarcopenia. </h2>
 <p><strong>Definición:</strong> pacientes con diagnóstico de sarcopenia junto con osteoporosis u osteopenia.</p>
-<p><strong>Criterios usados:</strong></p>
+<p><strong>Variables utilizadas:</strong></p>
 <ul>
 <li><em>Nivel de sarcopenia</em> distinto de <em>sin sarcopenia</em>.</li>
 <li><em>Clasificación de densidad mineral</em> igual a <em>osteopenia</em> u <em>osteoporosis</em>.</li>
@@ -39,28 +39,153 @@
 <p><strong>Resultados:</strong></p>
 <ul>
 <li>Pacientes con osteosarcopenia: <strong>26</strong></li>
-<li>Pacintes sin osteosarcopenia: <strong>27</strong></li>
+<li>Pacientes sin osteosarcopenia: <strong>27</strong></li>
 </ul>
 <h3 id="visualización">Visualización. </h3>
 <h4 id="1-conteo-de-pacientes">1. Conteo de pacientes. </h4>
 <p><img src="outputs/osteosarcopenia_pacientes.png" alt="Barplot conteo"></p>
-<p><strong>Análisis:</strong><br>
+<p><strong>Interpretación:</strong><br>
 Se observa que 26 de los 53 pacientes presentan tanto sarcopenia como osteopenia u osteoporosis, lo que representa el 49% de la muestra. Este hallazgo sugiere que la coexistencia de ambas condiciones es común en la población evaluada, y puede justificar su análisis conjunto.</p>
 <h4 id="2-distribución-por-edad">2. Distribución por edad. </h4>
 <p><img src="outputs/osteosarcopenia_edad.png" alt="Barplot conteo"></p>
-<p><strong>Análisis:</strong><br>
+<p><strong>Interpretación:</strong><br>
 La mediana de edad es mayor en el grupo con osteosarcopenia (~68 años) en comparación con quienes no la presentan (~64 años). Aunque hay superposición, los valores centrales y extremos sugieren una posible asociación entre mayor edad y presencia de osteosarcopenia.</p>
 <h4 id="3-osteosarcopenia-según-nivel-de-sarcopenia">3. Osteosarcopenia según nivel de sarcopenia. </h4>
 <p><img src="outputs/osteosarcopenia_nivel.png" alt="Barplot conteo"></p>
-<p><strong>Análisis:</strong><br>
+<p><strong>Interpretación:</strong><br>
 Los datos muestran que la mayoría de los pacientes con sarcopenia moderada presentan también osteosarcopenia. En contraste, los pacientes sin sarcopenia no tienen casos registrados de osteosarcopenia, lo cual apoya la definición lógica de esta variable derivada.</p>
 <h4 id="4-cruce-con-nivel-de-sarcopenia">4. Cruce con nivel de sarcopenia. </h4>
 <p><img src="outputs/osteosarcopenia_nivel_vs_dmo.png" alt="Barplot conteo"></p>
-<p><strong>Análisis:</strong><br>
+<p><strong>Interpretación:</strong><br>
 El cruce de variables indica que los pacientes con sarcopenia moderada son más frecuentes entre quienes tienen osteopenia. También se observan combinaciones de sarcopenia severa con osteoporosis. Estos patrones respaldan la consistencia interna del diagnóstico combinado (osteosarcopenia) y pueden servir como base para análisis posteriores.</p>
-<p><strong>Conclusión de objetivo 1:</strong><br>
-A partir del cruce entre los niveles de sarcopenia y la clasificación de densidad mineral ósea, se identificaron 26 pacientes con criterios compatibles con osteosarcopenia. Esta condicón afecta prácticamente la mitad de la muestra analizada.<br>
-Los patrones observados en las visualizaciones sugieren que la osteosarcopenia es más frecuente a mayor edad y con niveles más avanzados de sarcopenia. Además, la consistencia entre las variables usadas refuerza la validez del criterio adoptado para identificarla.</p>
+<h4 id="conclusión-de-objetivo-1">Conclusión de objetivo 1: </h4>
+<p>A partir del cruce entre los niveles de sarcopenia y la clasificación de densidad mineral ósea, se identificaron 26 pacientes con criterios compatibles con osteosarcopenia. Esta condición afecta prácticamente la mitad de la muestra analizada.</p>
+<p>Los patrones observados en las visualizaciones sugieren que la osteosarcopenia es más frecuente a mayor edad y con niveles más avanzados de sarcopenia. Además, la consistencia entre las variables usadas refuerza la validez del criterio adoptado para identificarla.</p>
+<hr>
+<h2 id="objetivo-2-clasificación-de-pacientes-con-osteosarcopenia-osteoporosis-u-osteopenia">Objetivo 2: Clasificación de pacientes con osteosarcopenia, osteoporosis u osteopenia. </h2>
+<p><strong>Definición:</strong> Este objetivo busca clasificar a los pacientes según las tres condiciones clínicas identificadas en el estudio:</p>
+<ul>
+<li>Osteosarcopenia.</li>
+<li>Osteopenia.</li>
+<li>Osteoporosis.</li>
+</ul>
+<blockquote>
+<p>Las condiciones no son excluyentes. Un paciente puede tener más de una simultáneamente.</p>
+</blockquote>
+<p><strong>Variables utilizadas:</strong></p>
+<ul>
+<li><em>Clasificación de densidad mineral ósea</em></li>
+<li><em>Nivel de sarcopenia</em></li>
+</ul>
+<p><strong>Resultados:</strong></p>
+<ul>
+<li>Osteopenia: <strong>35 pacientes</strong>.</li>
+<li>Osteosarcopenia: <strong>26 pacientes</strong>.</li>
+<li>Osteoporosis: <strong>18 pacientes</strong>.</li>
+</ul>
+<h3 id="visualización-1">Visualización </h3>
+<h4 id="conteo-de-pacientes-por-condición-clínica">Conteo de pacientes por condición clínica. </h4>
+<p><img src="outputs/objetivo2_condiciones_clinicas.png" alt="Barplot conteo"></p>
+<p><strong>Interpreteación:</strong><br>
+Los datos muestran que la osteopenia es la condición más prevalente en la muestra, presente en 66% de los pacientes. La osteosarcopenia afecta aproximadamente a la mitad de los pacientes, mientras que la osteoporosis representa el 34%.</p>
+<p>Dado que las condiciones no son excluyentes, es posible que existan intersecciones entre estos grupos, por lo que este análisis permite entender la magnitud individual de cada condición, pero no su combinación exacta.</p>
+<h4 id="conclusión-del-objetivo-2">Conclusión del Objetivo 2: </h4>
+<p>Este análisis permitió obtener un conteo individual de los pacientes que presentan osteopenia, osteoporosis y osteosarcopenia. La osteopenia fue la condición más frecuente, seguida de la osteosarcopenia. Estos resultados no reflejan exclusividad entre categorías, pero permiten tener un panorama inicial sobre la prevalencia de cada condición en la muestra.</p>
+<hr>
+<h2 id="objetivo-3-dar-rehabilitación-a-los-pacientes-de-acorde-a-sus-necesidades">Objetivo 3: Dar rehabilitación a los pacientes, de acorde a sus necesidades. </h2>
+<p><strong>Definición:</strong> Este objetivo está orientado a una acción clínica. Desde el análisis de datos no es posible prescribir ni sugerir tratamientos, pero sí identificar patrones funcionales que orienten a posibles decisiones.</p>
+<p><strong>Variables utilizadas:</strong></p>
+<ul>
+<li><em>Clasificación de estado físico</em>: nivel de rendimiento físico (bajo, intermedio, alto).</li>
+<li><em>Osteosarcopenia</em>: indicador si el paciente presenta sarcopenia + "alteración osea".</li>
+</ul>
+<p><strong>Criterio de análisis:</strong><br>
+Se evaluó la distribución del estado físico en pacientes con y sin osteosarcopenia, con el objetivo de detectar posibles perfiles con mayor necesidad de intervención funcional.</p>
+<blockquote>
+<p>Se utiliza el término "criterio de análisis" para señalar decisiones técnicas tomadas desde los datos.</p>
+</blockquote>
+<h3 id="visualización-2">Visualización. </h3>
+<h4 id="estado-físico-según-presencia-de-osteosarcopenia">Estado físico según presencia de osteosarcopenia. </h4>
+<p><img src="outputs/objetivo3_estado_vs_osteosarcopenia.png" alt="estado vs osteosarcopenia"></p>
+<p><strong>Interpretación:</strong><br>
+El gráfico muestra que los pacientes con estado físico bajo tienen una mayor proporción de casos con osteosarcopenia. En cambio aquellos con estado físico alto presentan predominantemente perfiles sin osteosarcopenia.</p>
+<p>Este patrón sugiere que el nivel de rendimiento físico puede estar asociado con la presencia de esta condición combinada.</p>
+<h4 id="conclusión-objetivo-3">Conclusión Objetivo 3: </h4>
+<p>A partir de la variable <em>Clasificacion de estado físico</em>, se identificó que los pacientes con osteosarcopenia presentan con mayor frecuencia una capacidad funcional reducida. Este hallazgo puede ser útil para priorizar intervenciones de rehabilitación en función de la clasificación funcional del paciente.</p>
+<hr>
+<h2 id="objetivo-4-evaluar-la-necesidad-de-tratamiento-nutriconal">Objetivo 4: Evaluar la necesidad de tratamiento nutriconal. </h2>
+<p><strong>Definición:</strong> Este objetivo busca identificar si existen patrones en el estado nutricional que puedan orientar hacia una intervención alimentaria, especialmente en pacientes con osteosarcopenia.</p>
+<p><strong>Variables utilizadas:</strong></p>
+<ul>
+<li>Clasificación IMC: adecuada, sobrepeso, obesidad 1, 2 y 3.</li>
+<li>Porcentaje de grasa corporal.</li>
+<li>Osteosarcopenia: presencia de sarcopenia + alteración ósea.</li>
+</ul>
+<p><strong>Criterio de análisis:</strong><br>
+Se examinaron las distribuciones de IMC y del porcentaje de grasa corporral en pacientes con y sin osteosarcopenia, con el fin de detectar perfiles de riesgo o indicios que sugieran la necesidad de intervención nutricional.</p>
+<blockquote>
+<p>Se utiliza el término "criterio de análisis" para señalar decisiones técnicas tomadas desde los datos.</p>
+</blockquote>
+<h3 id="visualización-3">Visualización. </h3>
+<h4 id="1-clasificación-imc-según-presencia-de-osteosarcopenia">1. Clasificación IMC según presencia de osteosarcopenia. </h4>
+<p><img src="outputs/objetivo4_imc_vs_osteosarco.png" alt="imv vs osteosarcopenia"></p>
+<p><strong>Interpretación:</strong><br>
+Se observa una mayor proporción de pacientes con osteosarcopenia en las categorías de obesidad 2 y obesidad 3, mientras que el grupo sin osteosarcopenia predomina en el sobrepeso. Esto podría sugerir una asociación entre niveles más elvados de IMC y mayor prevalencia de osteosarcopenia.</p>
+<h4 id="2-distribución-del--de-grasa-corporal">2. Distribución del % de grasa corporal. </h4>
+<p><img src="outputs/objetivo4_grasa_vs_osteosarco.png" alt="imv vs osteosarcopenia"></p>
+<p><strong>Interpretación:</strong><br>
+El gráfico muestra que los pacientes con osteosarcopenia presentan un procentaje de grasa corporal más alto que aquellos sin esta condición. La mediana se encuentra desplazada hacia valores mayores, lo cual indica que al menos la mitad de estos pacientes tienen un porcentaje de grasa elevado. Además el rango intercuartílico (la distancia entre el primer y tercer cuartil) también es mayor, lo que sugiere más variabilidad y que un segmento aplio del grupo presenta niveles altos de adiposidad. Los valores atípicos o extremos refuerzan esta dispersión.</p>
+<h4 id="conclusión-objetivo-4">Conclusión Objetivo 4: </h4>
+<p>A través del análisis del IMC y del porcentaje de grasa corporal, se observan diferencias entre los pacientes con y sin osteosarcopenia. Los datos muestran una mayor concentración de casos con osteosarcopenia en las categorías más altas de IMC, así como una mayor mediana de grasa corporal en ese grupo Estos hallazgos no establecen causalidad, pero aportan indicios de una posible relación entre composición corporal y presencia de osteosarcopenia.</p>
+<hr>
+<h2 id="objetivo-5-comparar-los-diversos-métodos-de-diagnóstico-de-sarcopenia">Objetivo 5: Comparar los diversos métodos de diagnóstico de sarcopenia. </h2>
+<p><strong>Definición:</strong> Este objetivo busca observar cómo se comportan diferentes métodos diagnósticos de sarcopenia en la muestra. No se busca vaidad los métodos clínicamente, sino detectar consistencias, patrones o discrepancias entre ellos.</p>
+<p><strong>Variables utilizadas:</strong><br>
+<strong>Categóricas:</strong></p>
+<ul>
+<li><em>Resultado de la escala SARC-F.</em></li>
+<li><em>Resultado IMME.</em></li>
+<li><em>Resultado de la fuerza de prensión.</em></li>
+<li><em>Resultado de la velocidad de marcha.</em></li>
+</ul>
+<p><strong>Numéricas:</strong></p>
+<ul>
+<li><em>Circunferencia de la pantorilla.</em></li>
+<li><em>Fuerza de prensión.</em></li>
+<li><em>Velocidad de la marcha.</em></li>
+</ul>
+<h3 id="visualización-4">Visualización. </h3>
+<h4 id="1-escala-sarc-f">1. Escala SARC-F. </h4>
+<p><img src="outputs/objetivo5_sarc_f_resultado.png" alt="sarc-f"></p>
+<p><strong>Interpretación:</strong><br>
+35 pacientes presentan baja probabilidad de sarcopenía según SARC-F, mientras que 18 tienen alta probabilidad. Este instrimento, basado en autoevaluación funcional, identifica una proporción menor de posibles casos respecto a otros métodos.</p>
+<h4 id="2-circunferencia-de-miembro-torácico">2. Circunferencia de miembro torácico. </h4>
+<p><img src="outputs/objetivo5_imme_resultado.png" alt="imme"></p>
+<p><strong>Interpretación:</strong><br>
+La gran mayoría (44 pacientes) fue clasificacda como "normal", mientras que 8 fueron detectados con sarcopenia grado 1 y sólo 1 con grado 2. Esto podría indicar que éste criterio es más convervador o que la muestra tiene características que lo afectan.</p>
+<h4 id="3-fuerza-de-prensión">3. Fuerza de prensión. </h4>
+<p><img src="outputs/objetivo5_resultado_de_fp.png" alt="resultado de fp"></p>
+<p><strong>Interpretación:</strong><br>
+Hay distribución cercana entre pacientes con resultado <em>normal</em> (30) y aquellos con resultado <em>sarcopenia</em> (23). Esto indica que la fuerza de prensión muestra un equilibrio en la detección dentro de esta muestra.</p>
+<h4 id="4-velocidad">4. Velocidad. </h4>
+<p><img src="outputs/objetivo5_resultado_de_velocidad.png" alt="resultado_de_velocidad"></p>
+<p><strong>Interpretación:</strong><br>
+Similar al patrón anterior, 31 pacientes fueron clasificados como <em>normal</em>, mientras que <em>22</em> mostraron indicadores compatibles con sarcopenia. Esto sugiere que la velocidad también ofrece una distribución equilibrada como criterio.</p>
+<h4 id="5-circunferencia-de-pantorrilla">5. Circunferencia de pantorrilla. </h4>
+<p><img src="outputs/objetivo5_circunferencia_de_la_pantorrilla.png" alt="circunferencia de pantorrilla"></p>
+<p><strong>Interpretación:</strong><br>
+La distribucióin de la circunferencia de pantorrilla es similar entre grupos. No se observa una clara separación entre quienes tienen y no osteosarcopenia. La mediana es apenas menor en el grupo con osteosarcopenia, pero con una mayor dispersión.</p>
+<h4 id="6-fuerza-de-prenssión-kg">6. Fuerza de prenssión (kg). </h4>
+<p><img src="outputs/objetivo5_fuerza_de_prension.png" alt="fuerza de prensión"></p>
+<p><strong>Interpretación:</strong><br>
+Los pacientes con osteosarcopenia tienden a presentar una fuerza de prensión más baja. Las medianas entre ambos grupos están separadas, y el grupo con osteosarcopenia muestra también menor rango intercuartílico, indicando menor variabilidad.</p>
+<h4 id="7-velocidad-de-marcha-ms">7. Velocidad de marcha (m/s). </h4>
+<p><img src="outputs/objetivo5_velocidad_de_la_marcha.png" alt="velocidad de la marcha"></p>
+<p><strong>Interpretación:</strong><br>
+Los pacientes con osteosarcopenia tienden a tener velocidades de marcha más bajas. La mediana y el rango intercuartílico del grupo se sitúan en valores inferiores, lo que sugiere una menor capacidad funcional en términos de desplazamiento. Esto se refuerza por la presencia de varios valores atípicos bajos en este grupo.</p>
+<h4 id="conclusión-objetivo-5">Conclusión Objetivo 5: </h4>
+<p>El análisis comparativo de los métodos disponibles para detectar sarcopenia mostró resultados razonablemente consistentes. A través de los métodos categóricos (SARC-F, IMME, fuerza de prensión, velocidad de la marcha), se identificó un porcentaje importante de pacientes con algún grado de deterioro funcional, mientras que los métodos numéricos mostraros diferencias claras entre quienes presentan osteosarcopenia y quienes no.</p>
+<p>En particular, los pacientes con osteosarcopenia tienden a tener menor fuerza de prensión, menor velocidad de marcha y una ligera tendenceia a menor circunferencia de pantorilla. Estas observaciones sugieren que los métodos analizados responden en la dirección esperada segun el estado clínico de los pacientes.</p>
 
       </div>
       
